@@ -7,7 +7,14 @@ buildscript {
         google()
         jcenter()
         maven{
-            url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/dev"
+            url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/master"
+            credentials {
+//                username = "${artifactory_username}"
+//                password = "${artifactory_password}"
+
+                username = "zhu.wang@wkzuche.com"
+                password = "123456"
+            }
         }
     }
     dependencies {

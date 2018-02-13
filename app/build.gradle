@@ -39,11 +39,11 @@ dependencies {
 repositories {
 
 //    gitlab,maven依赖
-    maven{
-        url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/dev"
-
-
-    }
+//    maven{
+//        url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/dev"
+//
+//
+//    }
 
 //    本地maven依赖
 //    maven {
@@ -52,5 +52,19 @@ repositories {
 //    }
 
 //    maven { url 'D://Users/user2/.m2/repository' }
+    maven{
+        url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/master"
+//        url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/master@aar"
+//        url "http://10.18.0.104:8888/android/JiaoyinBrotherLib/tree/master/jiaoyinbrotherlib"
+
+        credentials {
+//                username = "${artifactory_username}"
+//                password = "${artifactory_password}"
+
+            username = "zhu.wang@wkzuche.com"
+            password = "123456"
+        }
+    }
 
 }
+
