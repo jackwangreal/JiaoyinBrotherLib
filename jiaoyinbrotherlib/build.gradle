@@ -29,26 +29,26 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 }
-
-uploadArchives{
-    repositories.mavenDeployer{
-//        repository(url:LOCAL_REPO_URL)
-        def mavenRepositoryPath = file(getProperty('LOCAL_REPO_URL'))
-        repository(url: "file://${mavenRepositoryPath.absolutePath}")
-
-//        pom.groupId = GROUP_ID
-//        pom.artifactId = ARTIFACTID
-//        pom.version = LIBRARY_VERSION
-
-//        enRepositoryPath = file(getProperty('aar.maventest'))
+//
+//uploadArchives{
+//    repositories.mavenDeployer{
+////        repository(url:LOCAL_REPO_URL)
+//        def mavenRepositoryPath = file(getProperty('LOCAL_REPO_URL'))
 //        repository(url: "file://${mavenRepositoryPath.absolutePath}")
-        pom.project{
-            groupId "com.jiaoyinbrother.jiaoyinbrotherlib"
-            artifactId "jiaoyinbrotherlib"
-            version 1.0
-        }
-    }
-}
+//
+////        pom.groupId = GROUP_ID
+////        pom.artifactId = ARTIFACTID
+////        pom.version = LIBRARY_VERSION
+//
+////        enRepositoryPath = file(getProperty('aar.maventest'))
+////        repository(url: "file://${mavenRepositoryPath.absolutePath}")
+//        pom.project{
+//            groupId "com.jiaoyinbrother.jiaoyinbrotherlib"
+//            artifactId "jiaoyinbrotherlib"
+//            version 1.0
+//        }
+//    }
+//}
 repositories {
     mavenCentral()
 }
